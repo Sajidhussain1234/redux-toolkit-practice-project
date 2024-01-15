@@ -1,10 +1,14 @@
 import React from "react";
-import logo from "./logo.svg";
-import { Counter } from "./features/counter/Counter";
 import "./App.css";
+import { Product } from "./features/product/Product";
+import { Box } from "@mui/material";
 
 function App() {
-  return <div className="App">Redux Toolkit </div>;
+  return (
+    <Box sx={{ alignContent: "center" }}>
+      <Product />
+    </Box>
+  );
 }
 
 export default App;
