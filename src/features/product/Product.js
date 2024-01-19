@@ -4,14 +4,14 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Box, Button, CardActionArea } from "@mui/material";
+import { Box, Button, CardActionArea, CardActions } from "@mui/material";
 import { fetchAsync } from "./productSlice";
 
 export function Product() {
   const productData = useSelector((state) => state.product.products);
   const dispatch = useDispatch();
 
-  console.log("data", productData);
+  // console.log("data", productData);
   const loadProducts = () => {
     dispatch(fetchAsync());
   };
@@ -25,6 +25,7 @@ export function Product() {
       >
         Load Products
       </Button>
+
       <Box
         sx={{
           display: "flex",
@@ -34,27 +35,31 @@ export function Product() {
         }}
       >
         {productData?.map((product) => (
-          <Card key={product.id} sx={{ maxWidth: 295 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={product.thumbnail}
-                alt={product.title}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {product.title}
-                </Typography>
-                <Typography gutterBottom variant="h6" component="div">
-                  Price: {product.price} Rupees
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {product.description}
-                </Typography>
-              </CardContent>
-              <Button variant="contained">Add to Cart</Button>
-            </CardActionArea>
+          <Card
+            sx={{ maxWidth: 295, display: "flex", flexDirection: "column" }}
+          >
+            <CardMedia
+              component="img"
+              alt={product.title}
+              height="140"
+              image={product.thumbnail}
+            />
+            <CardContent sx={{ flex: "1 0 auto" }}>
+              <Typography gutterBottom variant="h5" component="div">
+                {product.title}
+              </Typography>
+              <Typography gutterBottom variant="h5" component="div">
+                Price: {product.price} $
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                {product.description}
+              </Typography>
+            </CardContent>
+            <CardActions sx={{ alignSelf: "flex-end" }}>
+              <Button variant="contained" fullWidth>
+                Add to Cart
+              </Button>
+            </CardActions>
           </Card>
         ))}
       </Box>
