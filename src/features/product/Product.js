@@ -4,7 +4,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Box, Button, CardActionArea, CardActions } from "@mui/material";
+import { Box, Button, CardActions } from "@mui/material";
 import { fetchAsync } from "./productSlice";
 
 export function Product() {
@@ -19,7 +19,10 @@ export function Product() {
   return (
     <Box>
       <Button
-        sx={{ margin: "12px 8px" }}
+        sx={{
+          margin: "12px 8px",
+          display: productData.length === 0 ? "block" : "none",
+        }}
         variant="contained"
         onClick={loadProducts}
       >
@@ -28,6 +31,7 @@ export function Product() {
 
       <Box
         sx={{
+          marginTop: "4rem",
           display: "flex",
           flexWrap: "wrap",
           gap: "16px",
