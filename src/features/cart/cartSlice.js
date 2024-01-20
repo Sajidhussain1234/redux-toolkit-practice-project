@@ -1,8 +1,8 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { fetchProduct } from "./productAPI";
+import { fetchItems, additem, updateItem, deleteItem } from "./cartAPI";
 
 const initialState = {
-  products: [],
+  items: [],
   status: "idle",
 };
 
@@ -10,16 +10,19 @@ const initialState = {
 // can be dispatched like a regular action. This will call the thunk with the `dispatch` function as the first argument. Async
 // code can then be executed and other actions can be dispatched. Thunks are
 // typically used to make async requests.
-export const fetchAsync = createAsyncThunk(
-  "product/fetchproducts",
-  async () => {
-    const response = await fetchProduct();
-    return response.data;
-  }
-);
+export const fetchAsync = createAsyncThunk("cart/fetchItems", async () => {
+  const response = await fetchItems();
+  return response.data;
+});
 
-export const productSlice = createSlice({
-  name: "product",
+// Add new item
+export const addAsync = createAsyncThunk("cart/fetchItems", async (item) => {
+  const response = await fetchItems(item);
+  return response.data;
+});
+
+export const cartSlice = createSlice({
+  name: "cart",
   initialState,
   reducers: {
     // your reducer functions here
@@ -33,10 +36,14 @@ export const productSlice = createSlice({
       })
       .addCase(fetchAsync.fulfilled, (state, action) => {
         state.status = "idle";
-        state.products = action.payload;
+        state.items = action.payload;
+      })
+      .addCase(addAsync.fulfilled, (state, action) => {
+        state.status = "idle";
+        state.items.push(action.payload);
       });
   },
 });
 
-export const {} = productSlice.actions;
-export default productSlice.reducer;
+export const {} = cartSlice.actions;
+export default cartSlice.reducer;
