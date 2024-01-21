@@ -4,7 +4,7 @@ import axios from "axios";
 export function fetchItems() {
   return axios.get("http://localhost:8080/cart");
 }
-export function additem(item) {
+export function addItem(item) {
   return axios.post("http://localhost:8080/cart", item);
 }
 export function updateItem(id, updateItem) {

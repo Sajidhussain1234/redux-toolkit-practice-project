@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { fetchItems, additem, updateItem, deleteItem } from "./cartAPI";
+import { fetchItems, addItem, updateItem, deleteItem } from "./cartAPI";
 
 const initialState = {
   items: [],
@@ -17,7 +17,7 @@ export const fetchAsync = createAsyncThunk("cart/fetchItems", async () => {
 
 // Add new item
 export const addAsync = createAsyncThunk("cart/fetchItems", async (item) => {
-  const response = await fetchItems(item);
+  const response = await addItem(item);
   return response.data;
 });
 
