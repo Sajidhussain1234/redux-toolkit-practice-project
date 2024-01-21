@@ -1,72 +1,98 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Box, Button, CardActions } from "@mui/material";
-import { fetchAsync } from "./productSlice";
+import { Box, Button } from "@mui/material";
+import {
+  fetchCartAsync,
+  RemoveFromCart,
+  IncreaseInCart,
+  DecreaseFromCart,
+  deleteAsync,
+} from "./cartSlice";
 
-export function Product() {
-  const productData = useSelector((state) => state.product.products);
+export function Cart() {
+  const items = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
 
-  // console.log("data", productData);
-  const loadProducts = () => {
-    dispatch(fetchAsync());
+  const handleIncreaseInCart = (id) => {
+    dispatch(IncreaseInCart(id));
   };
 
-  return (
-    <Box>
-      <Button
-        sx={{
-          margin: "12px 8px",
-          display: productData.length === 0 ? "block" : "none",
-        }}
-        variant="contained"
-        onClick={loadProducts}
-      >
-        Load Products
-      </Button>
+  const handleDecreaseFromCart = (id) => {
+    dispatch(DecreaseFromCart(id));
+  };
 
-      <Box
-        sx={{
-          marginTop: "4rem",
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "16px",
-          justifyContent: "center",
-        }}
-      >
-        {productData?.map((product) => (
-          <Card
-            sx={{ maxWidth: 295, display: "flex", flexDirection: "column" }}
+  const handleRemoveFromCart = (id) => {
+    dispatch(deleteAsync(id));
+  };
+
+  useEffect(() => {
+    dispatch(fetchCartAsync());
+  }, []);
+
+  return (
+    <Box sx={{ margin: "3rem" }}>
+      {items?.map((item) => (
+        <Box
+          key={item.id}
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            padding: "1rem 1rem",
+            margin: ".5rem 0rem",
+            border: "2px solid black",
+            borderRadius: "8px",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-evenly",
+            }}
           >
-            <CardMedia
-              component="img"
-              alt={product.title}
-              height="140"
-              image={product.thumbnail}
-            />
-            <CardContent sx={{ flex: "1 0 auto" }}>
-              <Typography gutterBottom variant="h5" component="div">
-                {product.title}
-              </Typography>
-              <Typography gutterBottom variant="h5" component="div">
-                Price: {product.price} $
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {product.description}
-              </Typography>
-            </CardContent>
-            <CardActions sx={{ alignSelf: "flex-end" }}>
-              <Button variant="contained" fullWidth>
-                Add to Cart
+            <Typography>Title: {item.title}</Typography>
+            <Typography>Price: {item.price}</Typography>
+
+            <Box sx={{ display: "flex" }}>
+              <Button
+                size="small"
+                variant="contained"
+                onClick={() => handleDecreaseFromCart(item.id)}
+              >
+                -
               </Button>
-            </CardActions>
-          </Card>
-        ))}
-      </Box>
+              <Typography sx={{ margin: "0rem 4rem" }}>
+                {item.quantity}
+              </Typography>
+              <Button
+                size="small"
+                variant="contained"
+                onClick={() => handleIncreaseInCart(item.id)}
+              >
+                +
+              </Button>
+            </Box>
+            <Button
+              sx={{
+                "&:hover": {
+                  borderColor: "red",
+                },
+                "&:active": {
+                  borderColor: "red",
+                },
+              }}
+              content="red"
+              size="small"
+              variant="outlined"
+              onClick={() => handleRemoveFromCart(item.id)}
+            >
+              Remove from Cart
+            </Button>
+          </Box>
+          <img src={item.thumbnail} alt={item.title} height={140} width={140} />
+        </Box>
+      ))}
     </Box>
   );
 }
