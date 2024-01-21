@@ -1,34 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Box, Button, CardActions } from "@mui/material";
-import { fetchAsync } from "./productSlice";
+import { addAsync } from "../cart/cartSlice";
+import { fetchProductAsync } from "./productSlice";
 
 export function Product() {
   const productData = useSelector((state) => state.product.products);
   const dispatch = useDispatch();
 
-  // console.log("data", productData);
-  const loadProducts = () => {
-    dispatch(fetchAsync());
-  };
+  useEffect(() => {
+    dispatch(fetchProductAsync());
+  }, []);
 
   return (
     <Box>
-      <Button
-        sx={{
-          margin: "12px 8px",
-          display: productData.length === 0 ? "block" : "none",
-        }}
-        variant="contained"
-        onClick={loadProducts}
-      >
-        Load Products
-      </Button>
-
       <Box
         sx={{
           marginTop: "4rem",
@@ -40,6 +29,7 @@ export function Product() {
       >
         {productData?.map((product) => (
           <Card
+            key={product.id}
             sx={{ maxWidth: 295, display: "flex", flexDirection: "column" }}
           >
             <CardMedia
@@ -60,7 +50,11 @@ export function Product() {
               </Typography>
             </CardContent>
             <CardActions sx={{ alignSelf: "flex-end" }}>
-              <Button variant="contained" fullWidth>
+              <Button
+                variant="contained"
+                fullWidth
+                onClick={(_) => dispatch(addAsync(product))}
+              >
                 Add to Cart
               </Button>
             </CardActions>
