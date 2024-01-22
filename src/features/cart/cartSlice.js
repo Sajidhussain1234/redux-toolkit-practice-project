@@ -33,10 +33,16 @@ export const cartSlice = createSlice({
   initialState,
   reducers: {
     IncreaseInCart: (state, action) => {
-      console.log("Following cart is called: ", action.payload);
+      const id = action.payload;
+      const itemIndex = state.items.findIndex((item) => item.id === id);
+      state.items[itemIndex].quantity += 1;
     },
+
     DecreaseFromCart: (state, action) => {
-      console.log("Following cart is called: ", action.payload);
+      const id = action.payload;
+      const itemIndex = state.items.findIndex((item) => item.id === id);
+      if (state.items[itemIndex].quantity > 1)
+        state.items[itemIndex].quantity -= 1;
     },
     // your reducer functions here
   },
@@ -56,7 +62,6 @@ export const cartSlice = createSlice({
         state.items.push(action.payload);
       })
       .addCase(deleteAsync.fulfilled, (state, action) => {
-        console.log(action.payload);
         state.status = "idle";
         const id = action.payload;
         const index = state.items.findIndex((item) => item.id === id);
