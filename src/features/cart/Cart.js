@@ -42,7 +42,7 @@ export function Cart() {
             }}
           >
             <Typography>Title: {item.title}</Typography>
-            <Typography>Price: {item.price}</Typography>
+            <Typography>Price: {item.price}$</Typography>
 
             <Box sx={{ display: "flex" }}>
               <Button
@@ -83,6 +83,10 @@ export function Cart() {
           <img src={item.thumbnail} alt={item.title} height={140} width={140} />
         </Box>
       ))}
+      <Typography variant="h4">
+        Total Price:{" "}
+        {items.reduce((acc, item) => item.price * item.quantity + acc, 0)}$
+      </Typography>
     </Box>
   );
 }
