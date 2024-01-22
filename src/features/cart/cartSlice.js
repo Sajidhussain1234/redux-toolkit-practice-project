@@ -38,9 +38,6 @@ export const cartSlice = createSlice({
     DecreaseFromCart: (state, action) => {
       console.log("Following cart is called: ", action.payload);
     },
-    RemoveFromCart: (state, action) => {
-      console.log("Remove from cart", action.payload);
-    },
     // your reducer functions here
   },
   // The `extraReducers` field lets the slice handle actions defined elsewhere,

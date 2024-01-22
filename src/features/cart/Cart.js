@@ -2,13 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Typography from "@mui/material/Typography";
 import { Box, Button } from "@mui/material";
-import {
-  fetchCartAsync,
-  RemoveFromCart,
-  IncreaseInCart,
-  DecreaseFromCart,
-  deleteAsync,
-} from "./cartSlice";
+import { IncreaseInCart, DecreaseFromCart, deleteAsync } from "./cartSlice";
 
 export function Cart() {
   const items = useSelector((state) => state.cart.items);
@@ -25,10 +19,6 @@ export function Cart() {
   const handleRemoveFromCart = (id) => {
     dispatch(deleteAsync(id));
   };
-
-  useEffect(() => {
-    dispatch(fetchCartAsync());
-  }, []);
 
   return (
     <Box sx={{ margin: "3rem" }}>
