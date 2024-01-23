@@ -2,7 +2,12 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Typography from "@mui/material/Typography";
 import { Box, Button } from "@mui/material";
-import { IncreaseInCart, DecreaseFromCart, deleteAsync } from "./cartSlice";
+import {
+  IncreaseInCart,
+  DecreaseFromCart,
+  deleteAsync,
+  fetchCartAsync,
+} from "./cartSlice";
 
 export function Cart() {
   const items = useSelector((state) => state.cart.items);
@@ -16,9 +21,13 @@ export function Cart() {
     dispatch(DecreaseFromCart(id));
   };
 
-  const handleRemoveFromCart = (id) => {
+  const handleDeleteFromCart = (id) => {
     dispatch(deleteAsync(id));
   };
+
+  useEffect(() => {
+    dispatch(fetchCartAsync());
+  }, []);
 
   return (
     <Box sx={{ margin: "3rem" }}>
@@ -79,9 +88,9 @@ export function Cart() {
               content="red"
               size="small"
               variant="outlined"
-              onClick={() => handleRemoveFromCart(item.id)}
+              onClick={() => handleDeleteFromCart(item.id)}
             >
-              Remove from Cart
+              Delete from Cart
             </Button>
           </Box>
           <img src={item.thumbnail} alt={item.title} height={140} width={140} />
