@@ -36,7 +36,7 @@ export function Product() {
       >
         {productData?.map((product) => (
           <Card
-            key={product.id}
+            key={product.product_id}
             sx={{ maxWidth: 295, display: "flex", flexDirection: "column" }}
           >
             <CardMedia

@@ -10,24 +10,33 @@ const initialState = {
 // can be dispatched like a regular action. This will call the thunk with the `dispatch` function as the first argument. Async
 // code can then be executed and other actions can be dispatched. Thunks are
 // typically used to make async requests.
+
+// fetch all items
 export const fetchCartAsync = createAsyncThunk("cart/fetchItems", async () => {
   const response = await fetchItems();
   return response.data;
 });
 
-// Add new item
-export const addAsync = createAsyncThunk("cart/updateItem", async (item) => {
-  const { title, price, thumbnail } = item;
-  const response = await addItem({ title, price, thumbnail, quantity: 1 });
+// Add a new item
+export const addAsync = createAsyncThunk("cart/addItem", async (item) => {
+  const { product_id, title, price, thumbnail } = item;
+  const response = await addItem({
+    product_id,
+    title,
+    price,
+    thumbnail,
+    quantity: 1,
+  });
   return response.data;
 });
 
-// Add new item
+// Delete an item
 export const deleteAsync = createAsyncThunk("cart/deleteItem", async (id) => {
   await deleteItem(id);
   return id;
 });
 
+// slice
 export const cartSlice = createSlice({
   name: "cart",
   initialState,
@@ -59,7 +68,15 @@ export const cartSlice = createSlice({
       })
       .addCase(addAsync.fulfilled, (state, action) => {
         state.status = "idle";
-        state.items.push(action.payload);
+        const { product_id } = action.payload;
+        // console.log("Product ID", product_id);
+        const index = state.items.findIndex(
+          (item) => item.product_id === product_id
+        );
+        // console.log("Index", index);
+        if (index !== -1) {
+          state.items[index].quantity += 1;
+        } else state.items.push(action.payload);
       })
       .addCase(deleteAsync.fulfilled, (state, action) => {
         state.status = "idle";
@@ -70,6 +87,5 @@ export const cartSlice = createSlice({
   },
 });
 
-export const { IncreaseInCart, DecreaseFromCart, RemoveFromCart } =
-  cartSlice.actions;
+export const { IncreaseInCart, DecreaseFromCart } = cartSlice.actions;
 export default cartSlice.reducer;
