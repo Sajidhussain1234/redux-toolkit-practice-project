@@ -22,6 +22,10 @@ export function Cart() {
 
   return (
     <Box sx={{ margin: "3rem" }}>
+      <Box sx={{ margin: "2rem", textAlign: "center" }}>
+        <Typography variant="h4">Cart Items</Typography>
+        <Typography variant="body">These are Add to Cart Items</Typography>
+      </Box>
       {items?.map((item) => (
         <Box
           key={item.id}
@@ -42,7 +46,7 @@ export function Cart() {
             }}
           >
             <Typography>Title: {item.title}</Typography>
-            <Typography>Price: {item.price}$</Typography>
+            <Typography>Price: ${item.price}</Typography>
 
             <Box sx={{ display: "flex" }}>
               <Button
@@ -83,9 +87,9 @@ export function Cart() {
           <img src={item.thumbnail} alt={item.title} height={140} width={140} />
         </Box>
       ))}
-      <Typography variant="h4">
-        Total Price:{" "}
-        {items.reduce((acc, item) => item.price * item.quantity + acc, 0)}$
+      <Typography variant="h4" sx={{ margin: ".5rem", textAlign: "center" }}>
+        Total Price: $
+        {items.reduce((acc, item) => item.price * item.quantity + acc, 0)}
       </Typography>
     </Box>
   );
