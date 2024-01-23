@@ -555,7 +555,7 @@
   ],
   "cart": [
     {
-      "id": "870a",
+      "id": "c238",
       "product_id": "1",
       "title": "iPhone 9",
       "price": 549,
@@ -563,7 +563,7 @@
       "quantity": 1
     },
     {
-      "id": "11d4",
+      "id": "bfa0",
       "product_id": "2",
       "title": "iPhone X",
       "price": 899,
@@ -571,51 +571,11 @@
       "quantity": 1
     },
     {
-      "id": "a9e4",
-      "product_id": "1",
-      "title": "iPhone 9",
-      "price": 549,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "fa5a",
-      "product_id": "1",
-      "title": "iPhone 9",
-      "price": 549,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "66cb",
-      "product_id": "1",
-      "title": "iPhone 9",
-      "price": 549,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "3490",
-      "product_id": "4",
-      "title": "OPPOF19",
-      "price": 280,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "2ede",
-      "product_id": "1",
-      "title": "iPhone 9",
-      "price": 549,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "ab3c",
-      "product_id": "13",
-      "title": "Fog Scent Xpressio Perfume",
-      "price": 13,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/13/thumbnail.webp",
+      "id": "1cad",
+      "product_id": "3",
+      "title": "Samsung Universe 9",
+      "price": 1249,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
       "quantity": 1
     }
   ]
