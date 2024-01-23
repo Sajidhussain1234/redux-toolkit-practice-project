@@ -17,10 +17,17 @@ export function Product() {
   }, []);
 
   return (
-    <Box>
+    <Box sx={{ margin: "2rem" }}>
+      <Box sx={{ margin: "2rem", textAlign: "center" }}>
+        <Typography variant="h4">Products List</Typography>
+        <Typography variant="body">
+          Click on Add to Cart button to Cart products and see them in Cart
+          section.
+        </Typography>
+      </Box>
       <Box
         sx={{
-          marginTop: "4rem",
+          margin: "2rem",
           display: "flex",
           flexWrap: "wrap",
           gap: "16px",
