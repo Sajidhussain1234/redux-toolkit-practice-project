@@ -12,6 +12,8 @@ export function Product() {
   const productData = useSelector((state) => state.product.products);
   const dispatch = useDispatch();
 
+  console.log("ProdData", productData);
+
   useEffect(() => {
     dispatch(fetchProductAsync());
   }, []);
