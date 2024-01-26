@@ -10,9 +10,10 @@ import { fetchProductAsync } from "./productSlice";
 
 export function Product() {
   const productData = useSelector((state) => state.product.products);
+  const items = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
 
-  console.log("ProdData", productData);
+  console.log("Cart Items", items);
 
   useEffect(() => {
     dispatch(fetchProductAsync());
