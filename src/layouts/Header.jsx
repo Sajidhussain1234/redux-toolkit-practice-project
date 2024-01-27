@@ -49,28 +49,27 @@ export default function Header() {
               position: "relative",
             }}
           >
-            <Typography
+            {/* <Typography
               sx={{ padding: "0px 8px", margin: "2px", position: "relative" }}
-            >
-              <AddShoppingCartIcon />
-              {cartItemCount > 0 && (
-                <Box
-                  sx={{
-                    position: "absolute",
-                    top: -14,
-                    right: -20,
-                    backgroundColor: "red",
-                    color: "white",
-                    borderRadius: "50%",
-                    padding: "2px",
-                    minWidth: "1.5rem",
-                    textAlign: "center",
-                  }}
-                >
-                  {cartItemCount}
-                </Box>
-              )}
-            </Typography>
+            > */}
+            <AddShoppingCartIcon sx={{ padding: "0px 8px" }} />
+            {cartItemCount > 0 && (
+              <Box
+                sx={{
+                  position: "absolute",
+                  top: -14,
+                  right: -20,
+                  backgroundColor: "red",
+                  color: "white",
+                  borderRadius: "50%",
+                  padding: "2px",
+                  minWidth: "1.5rem",
+                  textAlign: "center",
+                }}
+              >
+                {cartItemCount}
+              </Box>
+            )}
           </Link>
         </Box>
       </Toolbar>

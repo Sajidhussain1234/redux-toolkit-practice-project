@@ -585,7 +585,15 @@
   ],
   "cart": [
     {
-      "id": "4b78",
+      "id": "784e",
+      "product_id": "6",
+      "title": "MacBook Pro",
+      "price": 1749,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/6/thumbnail.png",
+      "quantity": 1
+    },
+    {
+      "id": "c72b",
       "product_id": "1",
       "title": "iPhone 9",
       "price": 549,
@@ -593,7 +601,7 @@
       "quantity": 1
     },
     {
-      "id": "ba27",
+      "id": "524c",
       "product_id": "2",
       "title": "iPhone X",
       "price": 899,
@@ -601,7 +609,7 @@
       "quantity": 1
     },
     {
-      "id": "cddb",
+      "id": "ab85",
       "product_id": "3",
       "title": "Samsung Universe 9",
       "price": 1249,
@@ -609,67 +617,83 @@
       "quantity": 1
     },
     {
-      "id": "a359",
-      "product_id": "8",
-      "title": "Microsoft Surface Laptop 4",
-      "price": 1499,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg",
+      "id": "6386",
+      "product_id": "15",
+      "title": "Eau De Perfume Spray",
+      "price": 30,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/15/thumbnail.jpg",
       "quantity": 1
     },
     {
-      "id": "0135",
-      "product_id": "7",
-      "title": "Samsung Galaxy Book",
-      "price": 1499,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg",
+      "id": "c6eb",
+      "product_id": "16",
+      "title": "Hyaluronic Acid Serum",
+      "price": 19,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/16/thumbnail.jpg",
       "quantity": 1
     },
     {
-      "id": "8152",
-      "product_id": "4",
-      "title": "OPPOF19",
-      "price": 280,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg",
+      "id": "73df",
+      "product_id": "21",
+      "title": "- Daal Masoor 500 grams",
+      "price": 20,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/21/thumbnail.png",
       "quantity": 1
     },
     {
-      "id": "0d63",
-      "product_id": "9",
-      "title": "Infinix INBOOK",
-      "price": 1099,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg",
+      "id": "30da",
+      "product_id": "22",
+      "title": "Elbow Macaroni - 400 gm",
+      "price": 14,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/22/thumbnail.jpg",
       "quantity": 1
     },
     {
-      "id": "6f1a",
-      "product_id": "10",
-      "title": "HP Pavilion 15-DK1056WM",
-      "price": 1099,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg",
+      "id": "1784",
+      "product_id": "23",
+      "title": "Orange Essence Food Flavou",
+      "price": 14,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/23/thumbnail.jpg",
       "quantity": 1
     },
     {
-      "id": "8bbc",
-      "product_id": "11",
-      "title": "perfume Oil",
-      "price": 13,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/11/thumbnail.jpg",
+      "id": "d569",
+      "product_id": "24",
+      "title": "cereals muesli fruit nuts",
+      "price": 46,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/24/thumbnail.jpg",
       "quantity": 1
     },
     {
-      "id": "f8fe",
-      "product_id": "14",
-      "title": "Non-Alcoholic Concentrated Perfume Oil",
-      "price": 120,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/14/thumbnail.jpg",
+      "id": "cdd9",
+      "product_id": "25",
+      "title": "Gulab Powder 50 Gram",
+      "price": 70,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/25/thumbnail.jpg",
       "quantity": 1
     },
     {
-      "id": "e55d",
-      "product_id": "29",
-      "title": "Handcraft Chinese style",
-      "price": 60,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/29/thumbnail.webp",
+      "id": "0b11",
+      "product_id": "26",
+      "title": "Plant Hanger For Home",
+      "price": 41,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/26/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "b494",
+      "product_id": "27",
+      "title": "Flying Wooden Bird",
+      "price": 51,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/27/thumbnail.webp",
+      "quantity": 1
+    },
+    {
+      "id": "5fa7",
+      "product_id": "28",
+      "title": "3D Embellishment Art Lamp",
+      "price": 20,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/28/thumbnail.jpg",
       "quantity": 1
     }
   ]

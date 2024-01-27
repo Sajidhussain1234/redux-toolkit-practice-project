@@ -13,10 +13,7 @@ export function Product() {
   const items = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
 
-  // console.log("Cart Items", items);
   const addToCart = (product) => {
-    console.log("items", items);
-    console.log("product", product);
     const check = items.some((item) => item.product_id === product.product_id);
     if (check) {
       alert("This item is already added in Cart");
