@@ -585,7 +585,7 @@
   ],
   "cart": [
     {
-      "id": "a4f0",
+      "id": "4b78",
       "product_id": "1",
       "title": "iPhone 9",
       "price": 549,
@@ -593,51 +593,83 @@
       "quantity": 1
     },
     {
-      "id": "a2bb",
-      "product_id": "17",
-      "title": "Tree Oil 30ml",
-      "price": 12,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/17/thumbnail.jpg",
+      "id": "ba27",
+      "product_id": "2",
+      "title": "iPhone X",
+      "price": 899,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
       "quantity": 1
     },
     {
-      "id": "c3b4",
-      "product_id": "18",
-      "title": "Oil Free Moisturizer 100ml",
-      "price": 40,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/18/thumbnail.jpg",
+      "id": "cddb",
+      "product_id": "3",
+      "title": "Samsung Universe 9",
+      "price": 1249,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
       "quantity": 1
     },
     {
-      "id": "712c",
-      "product_id": "19",
-      "title": "Skin Beauty Serum.",
-      "price": 46,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/19/thumbnail.jpg",
+      "id": "a359",
+      "product_id": "8",
+      "title": "Microsoft Surface Laptop 4",
+      "price": 1499,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg",
       "quantity": 1
     },
     {
-      "id": "5617",
-      "product_id": "20",
-      "title": "Freckle Treatment Cream- 15gm",
-      "price": 70,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/20/thumbnail.jpg",
+      "id": "0135",
+      "product_id": "7",
+      "title": "Samsung Galaxy Book",
+      "price": 1499,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg",
       "quantity": 1
     },
     {
-      "id": "60c6",
+      "id": "8152",
+      "product_id": "4",
+      "title": "OPPOF19",
+      "price": 280,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "0d63",
+      "product_id": "9",
+      "title": "Infinix INBOOK",
+      "price": 1099,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "6f1a",
+      "product_id": "10",
+      "title": "HP Pavilion 15-DK1056WM",
+      "price": 1099,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg",
+      "quantity": 1
+    },
+    {
+      "id": "8bbc",
+      "product_id": "11",
+      "title": "perfume Oil",
+      "price": 13,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/11/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "f8fe",
+      "product_id": "14",
+      "title": "Non-Alcoholic Concentrated Perfume Oil",
+      "price": 120,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/14/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "e55d",
       "product_id": "29",
       "title": "Handcraft Chinese style",
       "price": 60,
       "thumbnail": "https://cdn.dummyjson.com/product-images/29/thumbnail.webp",
-      "quantity": 1
-    },
-    {
-      "id": "6470",
-      "product_id": "30",
-      "title": "Key Holder",
-      "price": 30,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/30/thumbnail.jpg",
       "quantity": 1
     }
   ]
