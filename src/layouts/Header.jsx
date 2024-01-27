@@ -49,9 +49,6 @@ export default function Header() {
               position: "relative",
             }}
           >
-            {/* <Typography
-              sx={{ padding: "0px 8px", margin: "2px", position: "relative" }}
-            > */}
             <AddShoppingCartIcon sx={{ padding: "0px 8px" }} />
             {cartItemCount > 0 && (
               <Box
