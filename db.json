@@ -591,6 +591,54 @@
       "price": 549,
       "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
       "quantity": 1
+    },
+    {
+      "id": "a2bb",
+      "product_id": "17",
+      "title": "Tree Oil 30ml",
+      "price": 12,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/17/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "c3b4",
+      "product_id": "18",
+      "title": "Oil Free Moisturizer 100ml",
+      "price": 40,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/18/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "712c",
+      "product_id": "19",
+      "title": "Skin Beauty Serum.",
+      "price": 46,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/19/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "5617",
+      "product_id": "20",
+      "title": "Freckle Treatment Cream- 15gm",
+      "price": 70,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/20/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "60c6",
+      "product_id": "29",
+      "title": "Handcraft Chinese style",
+      "price": 60,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/29/thumbnail.webp",
+      "quantity": 1
+    },
+    {
+      "id": "6470",
+      "product_id": "30",
+      "title": "Key Holder",
+      "price": 30,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/30/thumbnail.jpg",
+      "quantity": 1
     }
   ]
 }
