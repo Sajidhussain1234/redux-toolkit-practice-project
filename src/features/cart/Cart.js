@@ -30,7 +30,7 @@ export function Cart() {
   }, []);
 
   return (
-    <Box sx={{ margin: "3rem" }}>
+    <Box sx={{ margin: "6rem" }}>
       <Box sx={{ margin: "2rem", textAlign: "center" }}>
         <Typography variant="h4">Cart Items</Typography>
         <Typography variant="body">These are Add to Cart Items</Typography>

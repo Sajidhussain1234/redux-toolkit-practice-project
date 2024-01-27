@@ -13,7 +13,15 @@ export function Product() {
   const items = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
 
-  console.log("Cart Items", items);
+  // console.log("Cart Items", items);
+  const addToCart = (product) => {
+    console.log("items", items);
+    console.log("product", product);
+    const check = items.some((item) => item.product_id === product.product_id);
+    if (check) {
+      alert("This item is already added in Cart");
+    } else dispatch(addAsync(product));
+  };
 
   useEffect(() => {
     dispatch(fetchProductAsync());
@@ -22,15 +30,16 @@ export function Product() {
   return (
     <Box>
       {!productData.length ? (
-        <Box sx={{ margin: "2rem", textAlign: "center" }}>
+        <Box sx={{ margin: "6rem", textAlign: "center" }}>
           <Typography variant="h4">Products List</Typography>
           <Typography variant="body">
-            Start Json server by running command --json-server db.json -p 8080
+            Start Json server by running command:{" "}
+            <code style={{ color: "blue" }}>json-server db.json -p 8080</code>{" "}
             then products will upload
           </Typography>
         </Box>
       ) : (
-        <Box sx={{ margin: "2rem" }}>
+        <Box sx={{ margin: "6rem 0rem" }}>
           <Box sx={{ margin: "2rem", textAlign: "center" }}>
             <Typography variant="h4">Products List</Typography>
             <Typography variant="body">
@@ -73,7 +82,7 @@ export function Product() {
                   <Button
                     variant="contained"
                     fullWidth
-                    onClick={(_) => dispatch(addAsync(product))}
+                    onClick={(_) => addToCart(product)}
                   >
                     Add to Cart
                   </Button>
