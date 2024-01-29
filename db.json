@@ -585,54 +585,6 @@
   ],
   "cart": [
     {
-      "id": "a4ca",
-      "product_id": "28",
-      "title": "3D Embellishment Art Lamp",
-      "price": 20,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/28/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "7150",
-      "product_id": "27",
-      "title": "Flying Wooden Bird",
-      "price": 51,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/27/thumbnail.webp",
-      "quantity": 1
-    },
-    {
-      "id": "4717",
-      "product_id": "1",
-      "title": "iPhone 9",
-      "price": 549,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "4660",
-      "product_id": "2",
-      "title": "iPhone X",
-      "price": 899,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "0ed6",
-      "product_id": "3",
-      "title": "Samsung Universe 9",
-      "price": 1249,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "acb0",
-      "product_id": "4",
-      "title": "OPPOF19",
-      "price": 280,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
       "id": "bee3",
       "product_id": "5",
       "title": "Huawei P30",
@@ -662,6 +614,22 @@
       "title": "Microsoft Surface Laptop 4",
       "price": 1499,
       "thumbnail": "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "91d5",
+      "product_id": "1",
+      "title": "iPhone 9",
+      "price": 549,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "13f3",
+      "product_id": "2",
+      "title": "iPhone X",
+      "price": 899,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
       "quantity": 1
     }
   ]
