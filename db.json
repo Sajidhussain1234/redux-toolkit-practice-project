@@ -585,7 +585,7 @@
   ],
   "cart": [
     {
-      "id": "d5db",
+      "id": "bd1d",
       "product_id": "1",
       "title": "iPhone 9",
       "price": 549,
@@ -593,7 +593,7 @@
       "quantity": 1
     },
     {
-      "id": "8c10",
+      "id": "6e3a",
       "product_id": "2",
       "title": "iPhone X",
       "price": 899,
@@ -601,7 +601,7 @@
       "quantity": 1
     },
     {
-      "id": "f5ac",
+      "id": "6293",
       "product_id": "3",
       "title": "Samsung Universe 9",
       "price": 1249,
@@ -609,7 +609,7 @@
       "quantity": 1
     },
     {
-      "id": "2504",
+      "id": "c22f",
       "product_id": "4",
       "title": "OPPOF19",
       "price": 280,
@@ -617,7 +617,7 @@
       "quantity": 1
     },
     {
-      "id": "b41a",
+      "id": "7f9a",
       "product_id": "5",
       "title": "Huawei P30",
       "price": 499,
@@ -625,7 +625,7 @@
       "quantity": 1
     },
     {
-      "id": "10c0",
+      "id": "35d6",
       "product_id": "6",
       "title": "MacBook Pro",
       "price": 1749,
@@ -633,7 +633,7 @@
       "quantity": 1
     },
     {
-      "id": "fd5b",
+      "id": "5ce8",
       "product_id": "7",
       "title": "Samsung Galaxy Book",
       "price": 1499,
@@ -641,7 +641,7 @@
       "quantity": 1
     },
     {
-      "id": "a387",
+      "id": "e5b5",
       "product_id": "8",
       "title": "Microsoft Surface Laptop 4",
       "price": 1499,
@@ -649,7 +649,7 @@
       "quantity": 1
     },
     {
-      "id": "0334",
+      "id": "68c7",
       "product_id": "9",
       "title": "Infinix INBOOK",
       "price": 1099,
@@ -657,91 +657,11 @@
       "quantity": 1
     },
     {
-      "id": "f025",
+      "id": "bd63",
       "product_id": "10",
       "title": "HP Pavilion 15-DK1056WM",
       "price": 1099,
       "thumbnail": "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg",
-      "quantity": 1
-    },
-    {
-      "id": "8242",
-      "product_id": "11",
-      "title": "perfume Oil",
-      "price": 13,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/11/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "e586",
-      "product_id": "12",
-      "title": "Brown Perfume",
-      "price": 40,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/12/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "40ee",
-      "product_id": "13",
-      "title": "Fog Scent Xpressio Perfume",
-      "price": 13,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/13/thumbnail.webp",
-      "quantity": 1
-    },
-    {
-      "id": "fcf6",
-      "product_id": "14",
-      "title": "Non-Alcoholic Concentrated Perfume Oil",
-      "price": 120,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/14/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "83ef",
-      "product_id": "15",
-      "title": "Eau De Perfume Spray",
-      "price": 30,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/15/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "0c08",
-      "product_id": "16",
-      "title": "Hyaluronic Acid Serum",
-      "price": 19,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/16/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "4d94",
-      "product_id": "17",
-      "title": "Tree Oil 30ml",
-      "price": 12,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/17/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "9e22",
-      "product_id": "18",
-      "title": "Oil Free Moisturizer 100ml",
-      "price": 40,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/18/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "9bd4",
-      "product_id": "19",
-      "title": "Skin Beauty Serum.",
-      "price": 46,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/19/thumbnail.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "067c",
-      "product_id": "20",
-      "title": "Freckle Treatment Cream- 15gm",
-      "price": 70,
-      "thumbnail": "https://cdn.dummyjson.com/product-images/20/thumbnail.jpg",
       "quantity": 1
     }
   ]
