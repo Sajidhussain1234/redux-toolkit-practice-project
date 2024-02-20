@@ -1,6 +1,6 @@
 import axios from "axios";
 
-// A mock function to mimic making an async request for data
+// A  function to making an async request for data
 export function fetchItems() {
   return axios.get("http://localhost:8080/cart");
 }
