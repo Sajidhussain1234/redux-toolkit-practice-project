@@ -583,5 +583,30 @@
       "id": "7598"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "29f4",
+      "product_id": "1",
+      "title": "iPhone 9",
+      "price": 549,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "0b44",
+      "product_id": "2",
+      "title": "iPhone X",
+      "price": 899,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "1ad4",
+      "product_id": "3",
+      "title": "Samsung Universe 9",
+      "price": 1249,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
+      "quantity": 1
+    }
+  ]
 }
