@@ -607,6 +607,38 @@
       "price": 1249,
       "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
       "quantity": 1
+    },
+    {
+      "id": "1c35",
+      "product_id": "1",
+      "title": "iPhone 9",
+      "price": 549,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "6494",
+      "product_id": "2",
+      "title": "iPhone X",
+      "price": 899,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "18c3",
+      "product_id": "3",
+      "title": "Samsung Universe 9",
+      "price": 1249,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "cb26",
+      "product_id": "4",
+      "title": "OPPOF19",
+      "price": 280,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg",
+      "quantity": 1
     }
   ]
 }
